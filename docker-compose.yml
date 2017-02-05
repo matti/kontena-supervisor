@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  web:
+    image: mattipaksula/kontena-supervisor
+    build: .
+    ports:
+      - 4567:80
+    environment:
+      - RACK_ENV=${RACK_ENV:-production}
+      - HOSTNAME=kontena-supervisor-99.kontena.local
+      - KONTENA_NODE_NAME=kontena-dev-node-name-01
+    volumes:
+      - .:/app
+      - /usr/local/bundle
