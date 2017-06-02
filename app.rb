@@ -10,7 +10,8 @@ get '/' do
   instance_number = ENV['HOSTNAME'].split(".").first.split("-").last
 
   erb :index, locals: {
-    instance_number_ascii: a.asciify(instance_number)
+    instance_number_ascii: a.asciify(instance_number),
+    meta_refresh_seconds: params[:refresh]
   }
 end
 
