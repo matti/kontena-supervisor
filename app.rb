@@ -15,6 +15,6 @@ get '/' do
   }
 end
 
-get '/__health' do
+get '/health' do
   "ok"
 end
