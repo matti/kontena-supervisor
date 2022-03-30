@@ -4,7 +4,9 @@ GEM
     artii (2.1.2)
     backports (3.6.8)
     multi_json (1.12.1)
-    puma (3.6.1)
+    nio4r (2.5.8)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
